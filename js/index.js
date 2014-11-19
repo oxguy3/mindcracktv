@@ -569,6 +569,11 @@ $(".mindcrack-today-list").mouseout(function() {
 });
 
 
+function onNotImplementedFeature() {
+  alert("Sorry, you can't do that yet. This website is merely a proof of concept, so not all the features have been implemented.");
+}
+
+
 
 
 
