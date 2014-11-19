@@ -1,0 +1,409 @@
+/* TODO missing WesWilson */
+
+.playerpic-100 {
+    background:url(/img/faces-100.png);
+    background-size:100%;
+    width:100px;
+    height:100px;
+    display:block;
+    border-radius:5px;
+
+    /* placeholder image */
+    background-position:0 -1600px;
+}
+
+.playerpic-32 {
+    background:url(/img/faces-32.png);
+    background-size:100%;
+    width:32px;
+    height:32px;
+    display:inline-block;
+    border-radius:4px;
+
+    /* placeholder image */
+    background-position:0 -512px;
+}
+
+.playerpic-24 {
+    background:url(/img/faces-24.png);
+    background-size:100%;
+    width:24px;
+    height:24px;
+    display:inline-block;
+    border-radius:3px;
+
+    /* placeholder image */
+    background-position:0 -384px;
+}
+
+span.playerpic-100.adlingtont {
+    background-position:0 0
+}
+
+span.playerpic-100.arkasmc {
+    background-position:0 -100px
+}
+
+span.playerpic-100.aureylian {
+    background-position:0 -200px
+}
+
+span.playerpic-100.avidyazen {
+    background-position:0 -300px
+}
+
+span.playerpic-100.bdoubleo100 {
+    background-position:0 -400px
+}
+
+span.playerpic-100.blamethecontroller {
+    background-position:0 -500px
+}
+
+span.playerpic-100.coestar {
+    background-position:0 -600px
+}
+
+span.playerpic-100.docm77 {
+    background-position:0 -700px
+}
+
+span.playerpic-100.ethoslab {
+    background-position:0 -800px
+}
+
+span.playerpic-100.generikb {
+    background-position:0 -900px
+}
+
+span.playerpic-100.guudeboulderfist {
+    background-position:0 -1000px
+}
+
+span.playerpic-100.imanderzel {
+    background-position:0 -1100px
+}
+
+span.playerpic-100.jsano19 {
+    background-position:0 -1200px
+}
+
+span.playerpic-100.kurtjmac {
+    background-position:0 -1300px
+}
+
+span.playerpic-100.mhykol {
+    background-position:0 -1400px
+}
+
+span.playerpic-100.millbeeful {
+    background-position:0 -1500px
+}
+
+span.playerpic-100.mindcracknetwork {
+    background-position:0 -1600px
+}
+
+span.playerpic-100.nebris88 {
+    background-position:0 -1700px
+}
+
+span.playerpic-100.pakratt13 {
+    background-position:0 -1800px
+}
+
+span.playerpic-100.paulsoaresjr {
+    background-position:0 -1900px
+}
+
+span.playerpic-100.pauseunpause {
+    background-position:0 -2000px
+}
+
+span.playerpic-100.pyropuncher {
+    background-position:0 -2100px
+}
+
+span.playerpic-100.sethbling {
+    background-position:0 -2200px
+}
+
+span.playerpic-100.sevadus {
+    background-position:0 -2300px
+}
+
+span.playerpic-100.supermcgamer {
+    background-position:0 -2400px
+}
+
+span.playerpic-100.thejims {
+    background-position:0 -2500px
+}
+
+span.playerpic-100.vechz {
+    background-position:0 -2600px
+}
+
+span.playerpic-100.vintagebeef {
+    background-position:0 -2700px
+}
+
+span.playerpic-100.w92baj {
+    background-position:0 -2800px
+}
+
+span.playerpic-100.zisteau {
+    background-position:0 -2900px
+}
+
+span.playerpic-100.omgchad {
+    background-position:0 -3000px
+}
+
+span.playerpic-32.adlingtont {
+    background-position:0 0
+}
+
+span.playerpic-32.arkasmc {
+    background-position:0 -32px
+}
+
+span.playerpic-32.aureylian {
+    background-position:0 -64px
+}
+
+span.playerpic-32.avidyazen {
+    background-position:0 -96px
+}
+
+span.playerpic-32.bdoubleo100 {
+    background-position:0 -128px
+}
+
+span.playerpic-32.blamethecontroller {
+    background-position:0 -160px
+}
+
+span.playerpic-32.coestar {
+    background-position:0 -192px
+}
+
+span.playerpic-32.docm77 {
+    background-position:0 -224px
+}
+
+span.playerpic-32.ethoslab {
+    background-position:0 -256px
+}
+
+span.playerpic-32.generikb {
+    background-position:0 -288px
+}
+
+span.playerpic-32.guudeboulderfist {
+    background-position:0 -320px
+}
+
+span.playerpic-32.imanderzel {
+    background-position:0 -352px
+}
+
+span.playerpic-32.jsano19 {
+    background-position:0 -384px
+}
+
+span.playerpic-32.kurtjmac {
+    background-position:0 -416px
+}
+
+span.playerpic-32.mhykol {
+    background-position:0 -448px
+}
+
+span.playerpic-32.millbeeful {
+    background-position:0 -480px
+}
+
+span.playerpic-32.mindcracknetwork {
+    background-position:0 -512px
+}
+
+span.playerpic-32.nebris88 {
+    background-position:0 -544px
+}
+
+span.playerpic-32.pakratt13 {
+    background-position:0 -576px
+}
+
+span.playerpic-32.paulsoaresjr {
+    background-position:0 -608px
+}
+
+span.playerpic-32.pauseunpause {
+    background-position:0 -640px
+}
+
+span.playerpic-32.pyropuncher {
+    background-position:0 -672px
+}
+
+span.playerpic-32.sethbling {
+    background-position:0 -704px
+}
+
+span.playerpic-32.sevadus {
+    background-position:0 -736px
+}
+
+span.playerpic-32.supermcgamer {
+    background-position:0 -768px
+}
+
+span.playerpic-32.thejims {
+    background-position:0 -800px
+}
+
+span.playerpic-32.vechz {
+    background-position:0 -832px
+}
+
+span.playerpic-32.vintagebeef {
+    background-position:0 -864px
+}
+
+span.playerpic-32.w92baj {
+    background-position:0 -896px
+}
+
+span.playerpic-32.zisteau {
+    background-position:0 -928px
+}
+
+span.playerpic-32.omgchad {
+    background-position:0 -960px
+}
+
+span.playerpic-24.adlingtont {
+    background-position:0 0
+}
+
+span.playerpic-24.arkasmc {
+    background-position:0 -24px
+}
+
+span.playerpic-24.aureylian {
+    background-position:0 -48px
+}
+
+span.playerpic-24.avidyazen {
+    background-position:0 -72px
+}
+
+span.playerpic-24.bdoubleo100 {
+    background-position:0 -96px
+}
+
+span.playerpic-24.blamethecontroller {
+    background-position:0 -120px
+}
+
+span.playerpic-24.coestar {
+    background-position:0 -144px
+}
+
+span.playerpic-24.docm77 {
+    background-position:0 -168px
+}
+
+span.playerpic-24.ethoslab {
+    background-position:0 -192px
+}
+
+span.playerpic-24.generikb {
+    background-position:0 -216px
+}
+
+span.playerpic-24.guudeboulderfist {
+    background-position:0 -240px
+}
+
+span.playerpic-24.imanderzel {
+    background-position:0 -264px
+}
+
+span.playerpic-24.jsano19 {
+    background-position:0 -288px
+}
+
+span.playerpic-24.kurtjmac {
+    background-position:0 -312px
+}
+
+span.playerpic-24.mhykol {
+    background-position:0 -336px
+}
+
+span.playerpic-24.millbeeful {
+    background-position:0 -360px
+}
+
+span.playerpic-24.mindcracknetwork {
+    background-position:0 -384px
+}
+
+span.playerpic-24.nebris88 {
+    background-position:0 -408px
+}
+
+span.playerpic-24.pakratt13 {
+    background-position:0 -432px
+}
+
+span.playerpic-24.paulsoaresjr {
+    background-position:0 -456px
+}
+
+span.playerpic-24.pauseunpause {
+    background-position:0 -480px
+}
+
+span.playerpic-24.pyropuncher {
+    background-position:0 -504px
+}
+
+span.playerpic-24.sethbling {
+    background-position:0 -528px
+}
+
+span.playerpic-24.sevadus {
+    background-position:0 -552px
+}
+
+span.playerpic-24.supermcgamer {
+    background-position:0 -576px
+}
+
+span.playerpic-24.thejims {
+    background-position:0 -600px
+}
+
+span.playerpic-24.vechz {
+    background-position:0 -624px
+}
+
+span.playerpic-24.vintagebeef {
+    background-position:0 -648px
+}
+
+span.playerpic-24.w92baj {
+    background-position:0 -672px
+}
+
+span.playerpic-24.zisteau {
+    background-position:0 -696px
+}
+
+span.playerpic-24.omgchad {
+    background-position:0 -720px
+}
