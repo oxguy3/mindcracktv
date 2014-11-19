@@ -10,98 +10,7 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/bootstrap-theme.min.css" rel="stylesheet">
   <link href="css/playericons.css" rel="stylesheet">
-
-  <style>
-
-  .nobr { white-space:nowrap; }
-
-
-  .mindcrack-today-heading {
-    margin-top: 0px;
-  }
-
-  .mindcrack-today-playericon {
-    padding-left: 4px;
-  }
-
-  .mindcrack-today-showcaseimg {
-    background-size: contain;
-  }
-
-  /*@media (min-width: 768px) {
-    .mindcrack-today-showcaseimg {
-      width: 348px;
-      height: 195px;
-      background-size: 348px;
-      background-position: 0 -33px;
-    }
-  }*/
-    /*348 261*/
-
-  .show-box-btn {
-    min-height: 38px;
-    padding: 0;
-    line-height: 0;
-    margin-bottom: 4px;
-  }
-
-  .ishover .btn.show-box-btn-featured {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-  }
-
-  .show-box-btn-icon {
-    margin: 2px;
-    float: left;
-    height: 32px;
-    width: 32px;
-  }
-  .show-box-btn-icon .glyphicon {
-    font-size:24px;
-    padding-top: 2px;
-  }
-
-  .show-box-btn-text {
-    padding: 10px 12px;
-    line-height: 1;
-    font-size: 16px;
-    display: inline-block;
-  }
-  /*line-height: 1.42857143;*/
-
-  .show-box-btn-featured:hover .show-box-btn-featured-icon {
-    opacity: 0.75;
-  }
-
-  .show-box-btn-featured-hover {
-    display: none;
-    border: 1px solid #2e6da4;
-    border-radius: 0 0 4px 4px;
-    font-size: 16px;
-    padding: 4px;
-  }
-
-
-  .view-link-secondary-box {
-    text-align: center;
-    margin-bottom: 14px;
-  }
-
-  .view-link-secondary-title {
-    font-size: 16px;
-    font-weight: bold;
-  }
-
-  .view-link-secondary {
-    padding: 0 3px;
-  }
-
-  .view-link-secondary:hover {
-    opacity: 0.75;
-    text-decoration: none;
-  }
-  }
-  </style>
+  <link href="css/index.css" rel="stylesheet">
 
   <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -134,10 +43,10 @@
             <span data-field="latest_all-html"></span>
           </div>
 
-          <a class="show-box-btn btn btn-default btn-block" href="#">
+          <button class="show-box-btn btn btn-default btn-block">
             <span class="show-box-btn-icon"><span class="glyphicon glyphicon-list-alt"></span></span>
             <span class="show-box-btn-text">Older episodes</span>
-          </a>
+          </button>
 
         </div><!-- /.caption -->
       </div><!-- /.thumbnail -->
@@ -182,18 +91,14 @@
 
           <div class="panel panel-default">
             <div class="panel-body">
-              <h3 class="mindcrack-today-heading">Today on the Mindcrack Server <small class="mindcrack-today-datePretty"></small></h3>
+              <h3 class="mindcrack-today-heading">Today on the Mindcrack Server <br class="visible-xs-inline" /><small class="mindcrack-today-datePretty"></small></h3>
               <div class="col-sm-5">
-                <div class="img-responsive img-rounded mindcrack-today-showcaseimg"></div>
+                <img class="img-responsive img-rounded mindcrack-today-showcaseimg-xs visible-xs-block center-block">
+                <div class="img-responsive img-rounded mindcrack-today-showcaseimg hidden-xs"></div>
                 some stuff will go here
               </div>
               <div class="col-sm-7">
                 <div class="list-group mindcrack-today-list">
-                  <a href="#" class="list-group-item active">Cras justo odio</a>
-                  <a href="#" class="list-group-item"><span class="badge">new</span>Dapibus ac facilisis in</a>
-                  <a href="#" class="list-group-item">Morbi leo risus</a>
-                  <a href="#" class="list-group-item">Porta ac consectetur ac</a>
-                  <a href="#" class="list-group-item">Vestibulum at eros</a>
                 </div>
               </div>
             </div>

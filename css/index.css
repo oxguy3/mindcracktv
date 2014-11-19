@@ -1,0 +1,112 @@
+
+  .nobr { white-space:nowrap; }
+
+
+  .mindcrack-today-heading {
+    margin-top: 0px;
+  }
+
+  .mindcrack-today-playericon {
+    padding-left: 4px;
+  }
+
+  .mindcrack-today-showcaseimg {
+    background-size: contain;
+  }
+
+  @media (min-width: 768px) {
+    .mindcrack-today-showcaseimg {
+      width: 257px;
+      height: 144px;
+      background-size: 257px;
+      background-position: 0 -24px;
+    }
+  }
+  @media (min-width: 992px) {
+    .mindcrack-today-showcaseimg {
+      width: 348px;
+      height: 195px;
+      background-size: 348px;
+      background-position: 0 -33px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .mindcrack-today-showcaseimg {
+      width: 432px;
+      height: 242px;
+      background-size: 432px;
+      background-position: 0 -41px;
+    }
+  }
+  /*
+  sm 257 192
+  md 348 261
+  lg 432 324
+  */
+
+  .mindcrack-today-showcaseimg-xs {
+    max-width
+  }
+
+  .show-box-btn {
+    min-height: 38px;
+    padding: 0;
+    line-height: 0;
+    margin-bottom: 4px;
+  }
+
+  .ishover .btn.show-box-btn-featured {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .show-box-btn-icon {
+    margin: 2px;
+    float: left;
+    height: 32px;
+    width: 32px;
+  }
+  .show-box-btn-icon .glyphicon {
+    font-size:24px;
+    padding-top: 2px;
+  }
+
+  .show-box-btn-text {
+    padding: 10px 12px;
+    line-height: 1;
+    font-size: 16px;
+    display: inline-block;
+  }
+  /*line-height: 1.42857143;*/
+
+  .show-box-btn-featured:hover .show-box-btn-featured-icon {
+    opacity: 0.75;
+  }
+
+  .show-box-btn-featured-hover {
+    display: none;
+    border: 1px solid #2e6da4;
+    border-radius: 0 0 4px 4px;
+    font-size: 16px;
+    padding: 4px;
+  }
+
+
+  .view-link-secondary-box {
+    text-align: center;
+    margin-bottom: 14px;
+  }
+
+  .view-link-secondary-title {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .view-link-secondary {
+    padding: 0 3px;
+  }
+
+  .view-link-secondary:hover {
+    opacity: 0.75;
+    text-decoration: none;
+  }

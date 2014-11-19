@@ -492,6 +492,8 @@ function generateMindcrackToday() {
     videoHtml += youtubeLink(video.yt);
     videoHtml += '" class="list-group-item mindcrack-today-list-item" data-imgsrc="';
     videoHtml += youtubeHqThumbnail(video.yt);
+    videoHtml += '" data-imgsrc-xs="';
+    videoHtml += youtubeMqThumbnail(video.yt);
     videoHtml += '"><span class="pull-right mindcrack-today-playericon" title="';
     videoHtml += getPersonById(video.by).displayName;
     videoHtml += '"><span class="playerpic-24 ';
@@ -548,19 +550,23 @@ $(".mindcrack-today-list").tooltip({
 
 // showcase image handling
 var showcaseImgPlaceholder = "img/hqdefault-placeholder.jpg";
-$(".mindcrack-today-showcaseimg").attr("src", showcaseImgPlaceholder);
+var showcaseImgPlaceholderXs = "img/mqdefault-placeholder.jpg";
+
+$(".mindcrack-today-showcaseimg").css("background-image", "url("+showcaseImgPlaceholder+")");
+$(".mindcrack-today-showcaseimg-xs").attr("src", showcaseImgPlaceholderXs);
 
 $(".mindcrack-today-list-item").mouseover(function() {
   var imgsrc = $(this).attr("data-imgsrc");
+  var imgsrcXs = $(this).attr("data-imgsrc-xs");
   $(".mindcrack-today-showcaseimg").css("background-image", "url("+imgsrc+")");
+  $(".mindcrack-today-showcaseimg-xs").attr("src", imgsrcXs);
 
 });
 
 $(".mindcrack-today-list").mouseout(function() {
-    $(".mindcrack-today-showcaseimg").css("background-image", "url("+showcaseImgPlaceholder+")");
-
-  }
-);
+  $(".mindcrack-today-showcaseimg").css("background-image", "url("+showcaseImgPlaceholder+")");
+  $(".mindcrack-today-showcaseimg-xs").attr("src", showcaseImgPlaceholderXs);
+});
 
 
 
@@ -572,6 +578,10 @@ function youtubeLink(yt) {
 
 function youtubeHqThumbnail(yt) {
   return "//img.youtube.com/vi/"+yt+"/hqdefault.jpg";
+}
+
+function youtubeMqThumbnail(yt) {
+  return "//img.youtube.com/vi/"+yt+"/mqdefault.jpg";
 }
 
 function prettyDate(date) {
