@@ -14,6 +14,23 @@
     background-size: contain;
   }
 
+  .mindcrack-today-showcase-description {
+    padding: 2px;
+  }
+
+  .mindcrack-today-showcase-playerpic {
+    margin: 4px 8px 4px 0;
+  }
+
+  .mindcrack-today-showcase-username {
+    font-weight: bold;
+    color: inherit;
+  }
+
+  .mindcrack-today-showcase-videolink {
+    margin: 4px 0;
+  }
+
   @media (min-width: 768px) {
     .mindcrack-today-showcaseimg {
       width: 257px;

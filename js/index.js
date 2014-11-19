@@ -208,43 +208,51 @@ var shows = [
 
 var mindcrackServerDays = [
   {
-    day: "2014-11-17",
+    year: 2014,
+    month: 11,
+    day: 17,
     videos: [
       {
         date: "2014-11-17T14:04:00",
         title: 'Minecraft Mindcrack Server Ep 40 - "PRANKED!!! Swedish Space Balls!!!"',
         by: "generikb",
-        yt: "ZPlq_94KkOE"
+        yt: "ZPlq_94KkOE",
+        description: '<span class="label label-primary">PRANK REACTION</span> The RV has moved...again! And this time it\'s in space!'
       },
       {
         date: "2014-11-17T12:00:00",
         title: 'Gravy Rainbow (Mindcrack Season 5 Episode 5)',
         by: "pauseunpause",
-        yt: "ZdlUN7GEMjw"
+        yt: "ZdlUN7GEMjw",
+        description: '<span class="label label-primary">CO-OP PRANK</span> Chad and Pause ride the Gravy Rainbow over Bling Towers'
       },
       {
         date: "2014-11-17T12:00:00",
         title: 'Mindcrack #16: GRAVY RAINBOW!',
         by: "omgchad",
-        yt: "pUd0tVYJeZE"
+        yt: "pUd0tVYJeZE",
+        description: '<span class="label label-primary">CO-OP PRANK</span> Chad pays off a debt helping Pause on the rainbow train'
       },
       {
         date: "2014-11-17T12:00:00",
         title: 'Mindcrack: I\'m Thankful for... (Nov. 17)',
         by: "aureylian",
-        yt: "KR92ozUit2s"
+        yt: "KR92ozUit2s",
+        description: "Aurey thanks everybody's viking for his raw awesomeness"
       },
       {
         date: "2014-11-17T12:00:00",
         title: 'Minecraft Mindcrack Survival 60 FPS Ep 26: All about that Base',
         by: "blamethecontroller",
-        yt: "n1OWRPUPzaI"
+        yt: "n1OWRPUPzaI",
+        description: "Blame gets to making parts of the Legacy of Kane build a place to call home"
       },
       {
         date: "2014-11-17T12:00:00",
         title: 'Minecraft - Mindcrack Season 5 - E20 - Back to Caving!',
         by: "jsano19",
-        yt: "7yyImMCeUuc"
+        yt: "7yyImMCeUuc",
+        description: "Jeff heads back into the caves of Mindcrack in search of riches"
       }
     ]
   }
@@ -432,7 +440,12 @@ function getPersonById(query) {
       return people[i];
     }
   }
-  return null;
+  var placeholder = {
+    id: query,
+    displayName: "??? (" + query + ")",
+    displayNameShort: "???"
+  }
+  return placeholder;
 }
 
 
@@ -482,7 +495,7 @@ function generateMindcrackToday() {
   var listDiv = $(".mindcrack-today-list");
   var today = mindcrackServerDays[0];
 
-  $(".mindcrack-today-datePretty").html(prettyDate(new Date(today.day)));
+  $(".mindcrack-today-datePretty").html(prettyDate(new Date(today.year, today.month - 1, today.day)));
 
   var listHtml = "";
   for (var i = 0; i < today.videos.length; i++) {
@@ -490,10 +503,8 @@ function generateMindcrackToday() {
     var video = today.videos[i];
     videoHtml += '<a href="';
     videoHtml += youtubeLink(video.yt);
-    videoHtml += '" class="list-group-item mindcrack-today-list-item" data-imgsrc="';
-    videoHtml += youtubeHqThumbnail(video.yt);
-    videoHtml += '" data-imgsrc-xs="';
-    videoHtml += youtubeMqThumbnail(video.yt);
+    videoHtml += '" class="list-group-item mindcrack-today-list-item" data-arrindex="';
+    videoHtml += i
     videoHtml += '"><span class="pull-right mindcrack-today-playericon" title="';
     videoHtml += getPersonById(video.by).displayName;
     videoHtml += '"><span class="playerpic-24 ';
@@ -548,34 +559,93 @@ $(".mindcrack-today-list").tooltip({
 
 
 
-// showcase image handling
+// showcase video handling
 var showcaseImgPlaceholder = "img/hqdefault-placeholder.jpg";
 var showcaseImgPlaceholderXs = "img/mqdefault-placeholder.jpg";
-
 $(".mindcrack-today-showcaseimg").css("background-image", "url("+showcaseImgPlaceholder+")");
 $(".mindcrack-today-showcaseimg-xs").attr("src", showcaseImgPlaceholderXs);
 
-$(".mindcrack-today-list-item").mouseover(function() {
-  var imgsrc = $(this).attr("data-imgsrc");
-  var imgsrcXs = $(this).attr("data-imgsrc-xs");
+var showcaseDescriptionPlaceholder = "Click on a video for more details.";
+$(".mindcrack-today-showcase-description").html(showcaseDescriptionPlaceholder);
+
+var mindcrackTodayListItemForceDefault = false;
+
+$(".mindcrack-today-list-item").click(function(event) {
+  mindcrackTodayListItemClick(this, event);
+});
+
+function mindcrackTodayListItemClick(element, event) {
+  if (event.ctrlKey || mindcrackTodayListItemForceDefault) {
+    mindcrackTodayListItemForceDefault = false;
+    return true;
+  }
+  event.preventDefault();
+
+  var today = mindcrackServerDays[0];
+  var video = today.videos[parseInt($(element).attr("data-arrindex"))];
+
+  var imgsrc = youtubeHqThumbnail(video.yt);
+  var imgsrcXs = youtubeMqThumbnail(video.yt);
   $(".mindcrack-today-showcaseimg").css("background-image", "url("+imgsrc+")");
   $(".mindcrack-today-showcaseimg-xs").attr("src", imgsrcXs);
 
+  $(".mindcrack-today-showcase-description").html(getVideoDetails(video));
+
+  $(".mindcrack-today-list-item").removeClass("active");
+  $(element).addClass("active");
+}
+
+$(".mindcrack-today-list-item").dblclick(function(event) {
+  mindcrackTodayListItemForceDefault = true;
+  $(this)[0].click();
 });
 
-$(".mindcrack-today-list").mouseout(function() {
+/*$(".mindcrack-today").mouseleave(function() {
   $(".mindcrack-today-showcaseimg").css("background-image", "url("+showcaseImgPlaceholder+")");
   $(".mindcrack-today-showcaseimg-xs").attr("src", showcaseImgPlaceholderXs);
-});
+
+  $(".mindcrack-today-showcase-description").html(showcaseDescriptionPlaceholder);
+});*/
+
+
+
+function getVideoDetails(video) {
+  var videoMoment = moment(video.date);
+  var detailsHtml = "";
+  detailsHtml += '<div class="clearfix">';
+
+  detailsHtml += '<div class="mindcrack-today-showcase-playerpic pull-left">';
+  detailsHtml += '<span class="playerpic-32 ' + video.by + '"></span>';
+  detailsHtml += '</div>';
+
+  detailsHtml += '<div class="pull-left">';
+  detailsHtml += '<a class="mindcrack-today-showcase-username" href="';
+  detailsHtml += linkYoutubeChannel(video.by) + '">';
+  detailsHtml += getPersonById(video.by).displayName + '</a><br>';
+  detailsHtml += '<span class="mindcrack-today-showcase-date text-muted" title="';
+  detailsHtml += videoMoment.format('LLL') + '">';
+  detailsHtml += videoMoment.fromNow();
+  detailsHtml += '</span>';
+  detailsHtml += '</div>';
+
+  detailsHtml += '<div class="pull-right mindcrack-today-showcase-videolink">';
+  detailsHtml += '<a href="' + youtubeLink(video.yt) + '" class="btn btn-primary">';
+  detailsHtml += '<span class="glyphicon glyphicon-play"></span> Watch</a>'
+  detailsHtml += '</div>';
+
+  detailsHtml += '</div>';
+  detailsHtml += '<p>' + video.description + '</p>';
+  return detailsHtml;
+}
 
 
 function onNotImplementedFeature() {
   alert("Sorry, you can't do that yet. This website is merely a proof of concept, so not all the features have been implemented.");
 }
 
-
-
-
+function linkYoutubeChannel(id) {
+  return "//youtube.com/user/" + id;
+}
 
 function youtubeLink(yt) {
   return "//youtu.be/" + yt;
@@ -590,5 +660,5 @@ function youtubeMqThumbnail(yt) {
 }
 
 function prettyDate(date) {
-  return date.toDateString();
+  return moment(date).format('LL');
 }
