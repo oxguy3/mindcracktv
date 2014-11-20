@@ -263,7 +263,7 @@ $('.show-archives-modal').on('show.bs.modal', function (event) {
     var featuredIndex = Math.floor((Math.random() * episode.views.length));
     var feature = episode.views[featuredIndex];
 
-    tr += '<td><a class="btn btn-primary btn-xs show-archives-tr-feature-link" href="' + youtubeLink(feature.yt) + '" title="' + getPersonById(feature.by).displayName + '"><span class="glyphicon glyphicon-play"></span> Watch</a></td>';
+    tr += '<td><a class="btn btn-primary btn-xs show-archives-tr-feature-link" href="' + youtubeLink(feature.yt) + '" title="' + getPersonById(feature.by).displayName + '"><span class="glyphicon glyphicon-play"></span><span class="hidden-xs"> Watch</span></a></td>';
 
     episode.views.sort(compareShowViews);
 
