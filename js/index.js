@@ -1,439 +1,3 @@
-var shows = [
-
-  {
-    title: "SpeedRunners",
-    thumbnail: "img/game-speedrunners.png",
-    episodes: [
-
-      {
-        date: "2014-11-17T22:00:00",
-        views: [
-          {
-            yt: "SqBNIb2MCbA",
-            by: "supermcgamer"
-          },
-          {
-            yt: "iKfdp8b6O2o",
-            by: "avidyazen"
-          },
-          {
-            yt: "ZSM74-guyTk",
-            by: "coestar"
-          },
-          {
-            yt: "12a36MMZEtI",
-            by: "millbeeful"
-          }
-        ]
-      }
-
-    ]
-  },
-
-  {
-    title: "Space Engineers",
-    thumbnail: "img/game-spaceengineers.png",
-    episodes: [
-
-      {
-        date: "2014-11-17T10:00:00",
-        views: [
-          {
-            yt: "FgD-V6uFOlM",
-            by: "coestar"
-          },
-          {
-            yt: "R_hO-YZ6eD4",
-            by: "guudeboulderfist"
-          },
-          {
-            yt: "0rIxpabFros8",
-            by: "millbeeful"
-          }
-        ]
-      }
-
-    ]
-  },
-
-  {
-    title: "Mario Kart",
-    thumbnail: "img/game-mariokart8.png",
-    episodes: [
-
-      {
-        date: "2014-11-16T18:00:00",
-        views: [
-          {
-            yt: "oKKxxvFMkaM",
-            by: "coestar"
-          },
-          {
-            yt: "3pk-gs713q8",
-            by: "greatscottlp"
-          },
-          {
-            yt: "ibHpinmNSxw",
-            by: "supermcgamer"
-          },
-          {
-            yt: "RUfLWm31Hmk",
-            by: "pyropuncher"
-          },
-          {
-            yt: "plVcPRTY_H0",
-            by: "pauseunpause"
-          },
-          {
-            yt: "a4ldcr6m0Vc",
-            by: "millbeeful"
-          },
-          {
-            yt: "y5whP1UnHJw",
-            by: "guudeboulderfist"
-          }
-        ]
-      }
-
-    ]
-  },
-
-  {
-    title: "Trouble in Terrorist Town",
-    thumbnail: "img/game-ttt.png",
-    episodes: [
-
-      {
-        date: "2014-11-16T14:00:00",
-        views: [
-          {
-            yt: "tXpIT9elWBU",
-            by: "pauseunpause"
-          },
-          {
-            yt: "f-g_nsOQ_Yk",
-            by: "coestar"
-          },
-          {
-            yt: "bg7lgrjRmdQ",
-            by: "pyropuncher"
-          },
-          {
-            yt: "L-3RtH8EWEg",
-            by: "millbeeful"
-          },
-          {
-            yt: "c7jEIhd98Tg",
-            by: "weswilson"
-          }
-        ]
-      },
-
-      {
-        date: "2014-11-10T14:00:00",
-        views: [
-          {
-            yt: "-i_44ebDiS4",
-            by: "guudeboulderfist"
-          },
-          {
-            yt: "myEMG8WLoT4",
-            by: "pauseunpause"
-          },
-          {
-            yt: "tfBzB_tsmG4",
-            by: "coestar"
-          },
-          {
-            yt: "uh4geYqakAc",
-            by: "pyropuncher"
-          },
-          {
-            yt: "Et4UOl4mzSQ",
-            by: "millbeeful"
-          },
-          {
-            yt: "_wph0WaCKtM",
-            by: "parvplays"
-          }
-        ]
-      }
-
-    ]
-  },
-
-  {
-    title: "Prop Hunt",
-    thumbnail: "img/game-prophunt.png",
-    episodes: [
-
-      {
-        date: "2014-11-15T14:00:00",
-        views: [
-          {
-            yt: "4bDN84Clv9g",
-            by: "guudeboulderfist"
-          },
-          {
-            yt: "itI69ux707E",
-            by: "pauseunpause"
-          },
-          {
-            yt: "MVWd21j-KJ8",
-            by: "coestar"
-          },
-          {
-            yt: "gDqdVh78ab0",
-            by: "pyropuncher"
-          },
-          {
-            yt: "ppk6ust9eR0",
-            by: "millbeeful"
-          },
-          {
-            yt: "F3ZafAjCZDM",
-            by: "omgchad"
-          },
-          {
-            yt: "g_LGyfwV3ak",
-            by: "weswilson"
-          }
-        ]
-      }
-
-    ]
-  }
-
-];
-
-var mindcrackServerDays = [
-  {
-    year: 2014,
-    month: 11,
-    day: 17,
-    videos: [
-      {
-        date: "2014-11-17T14:04:00",
-        title: 'Minecraft Mindcrack Server Ep 40 - "PRANKED!!! Swedish Space Balls!!!"',
-        by: "generikb",
-        yt: "ZPlq_94KkOE",
-        description: '<span class="label label-primary">PRANK REACTION</span> The RV has moved...again! And this time it\'s in space!'
-      },
-      {
-        date: "2014-11-17T12:00:00",
-        title: 'Gravy Rainbow (Mindcrack Season 5 Episode 5)',
-        by: "pauseunpause",
-        yt: "ZdlUN7GEMjw",
-        description: '<span class="label label-primary">CO-OP PRANK</span> Chad and Pause ride the Gravy Rainbow over Bling Towers'
-      },
-      {
-        date: "2014-11-17T12:00:00",
-        title: 'Mindcrack #16: GRAVY RAINBOW!',
-        by: "omgchad",
-        yt: "pUd0tVYJeZE",
-        description: '<span class="label label-primary">CO-OP PRANK</span> Chad pays off a debt helping Pause on the rainbow train'
-      },
-      {
-        date: "2014-11-17T12:00:00",
-        title: 'Mindcrack: I\'m Thankful for... (Nov. 17)',
-        by: "aureylian",
-        yt: "KR92ozUit2s",
-        description: "Aurey thanks everybody's viking for his raw awesomeness"
-      },
-      {
-        date: "2014-11-17T12:00:00",
-        title: 'Minecraft Mindcrack Survival 60 FPS Ep 26: All about that Base',
-        by: "blamethecontroller",
-        yt: "n1OWRPUPzaI",
-        description: "Blame gets to making parts of the Legacy of Kane build a place to call home"
-      },
-      {
-        date: "2014-11-17T12:00:00",
-        title: 'Minecraft - Mindcrack Season 5 - E20 - Back to Caving!',
-        by: "jsano19",
-        yt: "7yyImMCeUuc",
-        description: "Jeff heads back into the caves of Mindcrack in search of riches"
-      }
-    ]
-  }
-
-];
-
-var people = [
-  {
-    id: "adlingtont",
-    displayName: "Adlingtont",
-    displayNameShort: "Adlington"
-  },
-  {
-    id: "arkasmc",
-    displayName: "Arkas",
-    displayNameShort: "Arkas"
-  },
-  {
-    id: "aureylian",
-    displayName: "Aureylian",
-    displayNameShort: "Aureylian"
-  },
-  {
-    id: "avidyazen",
-    displayName: "AvidyaZEN",
-    displayNameShort: "Avidya"
-  },
-  {
-    id: "bdoubleo100",
-    displayName: "BdoubleO100",
-    displayNameShort: "BdoubleO"
-  },
-  {
-    id: "blamethecontroller",
-    displayName: "BlameTheController",
-    displayNameShort: "BlameTC"
-  },
-  {
-    id: "coestar",
-    displayName: "Coestar",
-    displayNameShort: "Coe"
-  },
-  {
-    id: "docm77",
-    displayName: "Docm77",
-    displayNameShort: "Docm"
-  },
-  {
-    id: "ethoslab",
-    displayName: "Etho",
-    displayNameShort: "Etho"
-  },
-  {
-    id: "generikb",
-    displayName: "Generikb",
-    displayNameShort: "Generikb"
-  },
-  {
-    id: "guudeboulderfist",
-    displayName: "GuudeBoulderfist",
-    displayNameShort: "Guude"
-  },
-  {
-    id: "imanderzel",
-    displayName: "AnderZEL",
-    displayNameShort: "AnderZEL"
-  },
-  {
-    id: "jsano19",
-    displayName: "JSano19",
-    displayNameShort: "JSano"
-  },
-  {
-    id: "kurtjmac",
-    displayName: "KurtJMac",
-    displayNameShort: "Kurt"
-  },
-  {
-    id: "mhykol",
-    displayName: "Mhykol",
-    displayNameShort: "Mhykol"
-  },
-  {
-    id: "millbeeful",
-    displayName: "Millbee",
-    displayNameShort: "Millbee"
-  },
-  {
-    id: "mindcracknetwork",
-    displayName: "Mindcrack Network",
-    displayNameShort: "Mindcrack"
-  },
-  {
-    id: "nebris88",
-    displayName: "Nebris",
-    displayNameShort: "Nebris"
-  },
-  {
-    id: "omgchad",
-    displayName: "OMGchad",
-    displayNameShort: "Chad"
-  },
-  {
-    id: "pakratt13",
-    displayName: "Pakratt13",
-    displayNameShort: "Pakratt"
-  },
-  {
-    id: "paulsoaresjr",
-    displayName: "PaulSoaresJr",
-    displayNameShort: "PaulSJr"
-  },
-  {
-    id: "pauseunpause",
-    displayName: "PauseUnpause",
-    displayNameShort: "Pause"
-  },
-  {
-    id: "pyropuncher",
-    displayName: "Pyropuncher",
-    displayNameShort: "Pyro"
-  },
-  {
-    id: "sethbling",
-    displayName: "SethBling",
-    displayNameShort: "SethBling"
-  },
-  {
-    id: "sevadus",
-    displayName: "Sevadus",
-    displayNameShort: "Sevadus"
-  },
-  {
-    id: "supermcgamer",
-    displayName: "SuperMCGamer",
-    displayNameShort: "MCGamer"
-  },
-  {
-    id: "thejims",
-    displayName: "thejims",
-    displayNameShort: "thejims"
-  },
-  {
-    id: "vechz",
-    displayName: "Vechs",
-    displayNameShort: "Vechs"
-  },
-  {
-    id: "vintagebeef",
-    displayName: "VintageBeef",
-    displayNameShort: "V. Beef"
-  },
-  {
-    id: "w92baj",
-    displayName: "W92Baj",
-    displayNameShort: "Baj"
-  },
-  {
-    id: "zisteau",
-    displayName: "Zisteau",
-    displayNameShort: "Zisteau"
-  },
-
-
-  {
-    id: "greatscottlp",
-    displayName: "GreatScottLP",
-    displayNameShort: "GreatScott"
-  },
-  {
-    id: "parvplays",
-    displayName: "YOGSCAST Parv",
-    displayNameShort: "Parv"
-  },
-  {
-    id: "weswilson",
-    displayName: "WesWilson",
-    displayNameShort: "Wes"
-  }
-];
-
 function getPersonById(query) {
   for (var i = 0; i < people.length; i++) {
     if (people[i].id == query) {
@@ -448,15 +12,34 @@ function getPersonById(query) {
   return placeholder;
 }
 
+function getViewByPerson(query, views) {
+  for (var i = 0; i < views.length; i++) {
+    if (views[i].by == query) {
+      return views[i];
+    }
+  }
+  return null;
+}
+
+function isPersonInViews(query, views) {
+  for (var i = 0; i < views.length; i++) {
+    if (views[i].by == query) {
+      return true;
+    }
+  }
+  return false;
+}
+
 function compareShowViews(a,b) {
   return (a.by).localeCompare(b.by);
 }
 
 
-function generateShowBox(show) {
+function generateShowBox(showId) {
+  var show = shows[showId];
   var box = $("#showTemplate").children().clone(true,true);
 
-  var latest = show.episodes[0];
+  var latest = show.episodes[show.episodes.length-1];
   var featuredIndex = Math.floor((Math.random() * latest.views.length));
 
   box.find('[data-field="title-html"]').html(show.title);
@@ -471,8 +54,8 @@ function generateShowBox(show) {
   var featuredYoutubeLink = youtubeLink(latest.views[featuredIndex].yt);
   box.find('[data-field="latest_featured_yt-href"]').attr("href", featuredYoutubeLink);
 
-  var featuredByShortStr = getPersonById(latest.views[featuredIndex].by).displayNameShort;
-  box.find('[data-field="latest_featured_by_short-html"]').html(featuredByShortStr);
+  var featuredByStr = getPersonById(latest.views[featuredIndex].by).displayName;
+  box.find('[data-field="latest_featured_by-title"]').attr("title", featuredByStr);
 
   latest.views.sort(compareShowViews);
 
@@ -492,6 +75,8 @@ function generateShowBox(show) {
   }
   otherViews += "</span>";
   box.find('[data-field="latest_all-html"]').html(otherViews);
+
+  box.find('.show-box-btn-archives').attr("data-showindex", showId);
 
   return box;
 }
@@ -535,7 +120,7 @@ function generateContent() {
 
   // generate shows
   for (var i = 0; i < shows.length; i++) {
-    homeContent.append(generateShowBox(shows[i]));
+    homeContent.append(generateShowBox(i));
 
     if ((i+1) % 3 == 0) {
       homeContent.append('<div class="clearfix visible-lg-block"></div>');
@@ -554,7 +139,7 @@ generateContent();
 
 $(".home-content").tooltip({
   placement: 'bottom',
-  selector: ".view-link-secondary, .show-box-btn-text",
+  selector: '.view-link-secondary'/*, .show-box-btn-text'*/,
   trigger: 'hover'
 });
 
@@ -608,16 +193,7 @@ $(".mindcrack-today-list-item").dblclick(function(event) {
   $(this)[0].click();
 });
 
-
 $(".mindcrack-today-list-item")[0].click();
-
-/*$(".mindcrack-today").mouseleave(function() {
-  $(".mindcrack-today-showcaseimg").css("background-image", "url("+showcaseImgPlaceholder+")");
-  $(".mindcrack-today-showcaseimg-xs").attr("src", showcaseImgPlaceholderXs);
-
-  $(".mindcrack-today-showcase-description").html(showcaseDescriptionPlaceholder);
-});*/
-
 
 
 function getVideoDetails(video) {
@@ -645,9 +221,102 @@ function getVideoDetails(video) {
   detailsHtml += '</div>';
 
   detailsHtml += '</div>';
-  detailsHtml += '<p>' + video.description + '</p>';
+  detailsHtml += '<p>';
+  if (video.tagline) {
+    detailsHtml += '<span class="label label-primary text-uppercase">';
+    detailsHtml += video.tagline + '</span> ';
+  }
+  detailsHtml += video.description + '</p>';
   return detailsHtml;
 }
+
+
+
+
+
+
+// archives modal handling
+
+$('.show-archives-modal').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget);
+  var showId = button.data('showindex'); 
+  var show = shows[showId];
+  var modal = $(this);
+
+
+  modal.find('.show-archives-heading').text(show.title);
+  var table = modal.find('.show-archives-table');
+  var tableBody = table.children("tbody");
+
+  tableBody.empty();
+
+  var tableRows = "";
+
+  for (var i = 0; i < show.episodes.length; i++) {
+    var episode = show.episodes[i];
+    var epMoment = moment(episode.date);
+
+    var tr = '<tr>';
+    tr += '<td>' + (i+1) + '</td>';
+    tr += '<td title="' + epMoment.format('LLL') + '">' + epMoment.format('ll') + '</td>';
+
+    var featuredIndex = Math.floor((Math.random() * episode.views.length));
+    var feature = episode.views[featuredIndex];
+
+    tr += '<td><a class="btn btn-primary btn-xs show-archives-tr-feature-link" href="' + youtubeLink(feature.yt) + '" title="' + getPersonById(feature.by).displayName + '"><span class="glyphicon glyphicon-play"></span> Watch</a></td>';
+
+    episode.views.sort(compareShowViews);
+
+    var perspectives = "";
+    for (var j = 0; j < show.people.length; j++) {
+      var by = show.people[j];
+      if (!isPersonInViews(by, episode.views)) {
+        perspectives += getArchiveLinkForView(null);
+        continue;
+      }
+      var view = getViewByPerson(by, episode.views);
+      perspectives += getArchiveLinkForView(view);
+    }
+
+    for (var j = 0; j < episode.views.length; j++) {
+      var view = episode.views[j];
+      if (show.people.indexOf(view.by) == -1) {
+        perspectives += getArchiveLinkForView(view);
+      }
+    }
+
+    tr += '<td>' + perspectives + '</td>';
+    tr += '</tr>';
+    tableRows += tr;
+  }
+
+  tableBody.html(tableRows);
+
+});
+
+function getArchiveLinkForView(view) {
+  if (view == null) {
+    return '<span class="show-archives-tr-view-link"><span class="show-archives-tr-view-icon playerpic-24 null_player"></span></span>'
+  }
+  var viewStr = "";
+  viewStr += '<a href="';
+  viewStr += youtubeLink(view.yt);
+  viewStr += '" target="_blank" class="show-archives-tr-view-link" title="';
+  viewStr += getPersonById(view.by).displayName;
+  viewStr += '"><span class="show-archives-tr-view-icon playerpic-24 ';
+  viewStr += view.by;
+  viewStr += '"></span></a>';
+  return viewStr;
+}
+
+
+$(".show-archives-modal").tooltip({
+  placement: 'bottom',
+  selector: '.show-archives-tr-view-link'/*, .show-archives-tr-feature-link'*/,
+  trigger: 'hover'
+});
+
+
 
 
 function onNotImplementedFeature() {
@@ -659,7 +328,7 @@ function linkYoutubeChannel(id) {
 }
 
 function youtubeLink(yt) {
-  return "//youtu.be/" + yt;
+  return "//youtube.com/watch?v=" + yt;
 }
 
 function youtubeHqThumbnail(yt) {

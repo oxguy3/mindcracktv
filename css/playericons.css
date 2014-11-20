@@ -36,6 +36,14 @@
     background-position:0 -384px;
 }
 
+/* blank space same size as playerpic */
+span.playerpic-100.null_player,
+span.playerpic-32.null_player,
+span.playerpic-24.null_player {
+    background: transparent;
+}
+
+
 span.playerpic-100.adlingtont {
     background-position:0 0
 }
