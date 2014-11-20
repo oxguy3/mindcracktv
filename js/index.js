@@ -448,6 +448,10 @@ function getPersonById(query) {
   return placeholder;
 }
 
+function compareShowViews(a,b) {
+  return (a.by).localeCompare(b.by);
+}
+
 
 function generateShowBox(show) {
   var box = $("#showTemplate").children().clone(true,true);
@@ -469,6 +473,8 @@ function generateShowBox(show) {
 
   var featuredByShortStr = getPersonById(latest.views[featuredIndex].by).displayNameShort;
   box.find('[data-field="latest_featured_by_short-html"]').html(featuredByShortStr);
+
+  latest.views.sort(compareShowViews);
 
   var otherViews = "";
   for (var i = 0; i < latest.views.length; i++) {
@@ -496,6 +502,8 @@ function generateMindcrackToday() {
   var today = mindcrackServerDays[0];
 
   $(".mindcrack-today-datePretty").html(prettyDate(new Date(today.year, today.month - 1, today.day)));
+
+  shuffle(today.videos);
 
   var listHtml = "";
   for (var i = 0; i < today.videos.length; i++) {
@@ -600,6 +608,9 @@ $(".mindcrack-today-list-item").dblclick(function(event) {
   $(this)[0].click();
 });
 
+
+$(".mindcrack-today-list-item")[0].click();
+
 /*$(".mindcrack-today").mouseleave(function() {
   $(".mindcrack-today-showcaseimg").css("background-image", "url("+showcaseImgPlaceholder+")");
   $(".mindcrack-today-showcaseimg-xs").attr("src", showcaseImgPlaceholderXs);
@@ -662,3 +673,10 @@ function youtubeMqThumbnail(yt) {
 function prettyDate(date) {
   return moment(date).format('LL');
 }
+
+//+ Jonas Raoni Soares Silva
+//@ http://jsfromhell.com/array/shuffle [v1.0]
+function shuffle(o){ //v1.0
+    for(var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+    return o;
+};

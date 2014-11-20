@@ -61,8 +61,11 @@
   lg 432 324
   */
 
-  .mindcrack-today-showcaseimg-xs {
-    max-width
+  @media (max-width:767px) {
+    .show-box-gamepic {
+      max-width: 320px;
+      height: auto;
+    }
   }
 
   .show-box-btn {
