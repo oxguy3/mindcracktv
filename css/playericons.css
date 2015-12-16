@@ -1,7 +1,7 @@
 /* TODO missing non-Mindcrackers */
 
 .playerpic-100 {
-    background:url(/img/faces-100.png);
+    background:url(../img/faces-100.png);
     background-size:100%;
     width:100px;
     height:100px;
@@ -13,7 +13,7 @@
 }
 
 .playerpic-32 {
-    background:url(/img/faces-32.png);
+    background:url(../img/faces-32.png);
     background-size:100%;
     width:32px;
     height:32px;
